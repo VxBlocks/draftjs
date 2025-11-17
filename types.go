@@ -22,9 +22,9 @@ type ContentBlock struct {
 // Entity
 // https://github.com/facebook/draft-js/blob/master/src/model/encoding/RawDraftEntity.js
 type Entity struct {
-	Type       string            `json:"type"`
-	Mutability string            `json:"mutability"`
-	Data       map[string]string `json:"data"`
+	Type       string                 `json:"type"`
+	Mutability string                 `json:"mutability"`
+	Data       map[string]interface{} `json:"data"`
 }
 
 type Range struct {
